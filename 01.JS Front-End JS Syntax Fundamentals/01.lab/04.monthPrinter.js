@@ -34,55 +34,55 @@
 function monthOfYear(currentMonth) {
   switch (currentMonth) {
     case 1:
-      console.log("January");
+      console.log('January');
       break;
 
     case 2:
-      console.log("February");
+      console.log('February');
       break;
 
     case 3:
-      console.log("March");
+      console.log('March');
       break;
 
     case 4:
-      console.log("April");
+      console.log('April');
       break;
 
     case 5:
-      console.log("May");
+      console.log('May');
       break;
 
     case 6:
-      console.log("June");
+      console.log('June');
       break;
 
     case 7:
-      console.log("July");
+      console.log('July');
       break;
 
     case 8:
-      console.log("August");
+      console.log('August');
       break;
 
     case 9:
-      console.log("September");
+      console.log('September');
       break;
 
     case 10:
-      console.log("October");
+      console.log('October');
       break;
 
     case 11:
-      console.log("November");
+      console.log('November');
       break;
 
     case 12:
-      console.log("December");
+      console.log('December');
       break;
 
     default:
-      console.log("Error!");
+      console.log('Error!');
   }
 }
 
