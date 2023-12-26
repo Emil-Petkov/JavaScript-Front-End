@@ -14,6 +14,7 @@
 
 
 
+
 let firstName = "Emil";
 let lastName = "Petkov";
 let town = `Sofia`;
