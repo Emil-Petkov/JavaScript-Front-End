@@ -1,4 +1,5 @@
 
+
 function ages(age) {
   if (age >= 0 && age <= 2) {
     console.log('baby');
