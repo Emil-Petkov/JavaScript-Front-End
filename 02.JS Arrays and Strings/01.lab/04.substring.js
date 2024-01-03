@@ -1,5 +1,5 @@
 function substring(text, startIndex, endIndex) {
-  return text.substring(startIndex, endIndex + 1);
+  return text.substring(startIndex, startIndex + endIndex);
 }
 
 console.log(substring('SkipWord', 4, 7));
