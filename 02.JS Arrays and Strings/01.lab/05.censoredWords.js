@@ -7,3 +7,16 @@ function censoredWords(text, hiddenWord) {
 }
 
 console.log(censoredWords('aaaaaaaa small small aaaaaaa small', 'small')); //aaaaaaaa ***** ***** aaaaaaa *****
+
+////////////////////////////////////////////////////////////////
+
+function censoredWords(text, hiddenWord) {
+  let result = text;
+
+  while (result.includes(hiddenWord)) {
+    result = result.replace(hiddenWord, '*'.repeat(hiddenWord.length));
+  }
+  return result;
+}
+
+console.log(censoredWords('aaaaaaaa small small aaaaaaa small', 'small')); ////aaaaaaaa ***** ***** aaaaaaa *****
