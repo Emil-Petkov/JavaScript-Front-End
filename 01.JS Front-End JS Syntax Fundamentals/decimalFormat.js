@@ -4,6 +4,7 @@
 
 
 
+
 function averageGrade(grade) {
   return grade.toFixed(2);
 }
