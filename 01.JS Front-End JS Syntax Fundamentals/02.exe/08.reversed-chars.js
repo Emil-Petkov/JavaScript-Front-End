@@ -5,6 +5,7 @@
 
 
 
+
 function reversedChars(firstChar, secondChar, thirdChar) {
     let text = firstChar + secondChar + thirdChar;
 
