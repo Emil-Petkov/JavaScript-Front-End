@@ -1,41 +1,58 @@
-function vacantion(peoples, typeReservation, dayOfWeek) {
-  let neededSum = 0;
+function vacation(nPeople, typeGroup, dayOfWeek) {
+    let totalPrice = 0;
 
-  if (typeReservation == 'Students') {
-    if (dayOfWeek == 'Friday') {
-      neededSum += peoples * 8.45;
-    } else if (dayOfWeek == 'Saturday') {
-      neededSum += peoples * 9.8;
-    } else if (dayOfWeek == 'Sunday') {
-      neededSum += peoples * 10.46;
+    switch (typeGroup) {
+        case 'Students':
+            if (dayOfWeek === 'Friday') {
+                totalPrice = nPeople * 8.45;
+
+            } else if (dayOfWeek === 'Saturday') {
+                totalPrice = nPeople * 9.80;
+
+            } else if (dayOfWeek === 'Sunday') {
+                totalPrice = nPeople * 10.46;
+            }
+
+            if (nPeople >= 30) {
+                totalPrice -= totalPrice * 0.15;
+            }
+            break;
+
+        case 'Business':
+
+            if (nPeople >= 100) {
+                nPeople -= 10
+            }
+
+            if (dayOfWeek === 'Friday') {
+                totalPrice = nPeople * 10.90;
+
+            } else if (dayOfWeek === 'Saturday') {
+                totalPrice = nPeople * 15.60;
+
+            } else if (dayOfWeek === 'Sunday') {
+                totalPrice = nPeople * 16.00;
+            }
+            break;
+
+        case 'Regular':
+            if (dayOfWeek === 'Friday') {
+                totalPrice = nPeople * 15.00;
+
+            } else if (dayOfWeek === 'Saturday') {
+                totalPrice = nPeople * 20.00;
+
+            } else if (dayOfWeek === 'Sunday') {
+                totalPrice = nPeople * 22.50;
+            }
+
+            if (nPeople >= 10 && nPeople <= 20) {
+                totalPrice -= totalPrice * 0.05;
+            }
+            break;
     }
-    if (peoples >= 30) {
-      neededSum -= neededSum * 0.15;
-    }
-  } else if (typeReservation == 'Business') {
-    if (peoples >= 100) {
-      peoples -= 10;
-    }
-    if (dayOfWeek == 'Friday') {
-      neededSum += peoples * 10.9;
-    } else if (dayOfWeek == 'Saturday') {
-      neededSum += peoples * 15.6;
-    } else if (dayOfWeek == 'Sunday') {
-      neededSum += peoples * 16;
-    }
-  } else if (typeReservation == 'Regular') {
-    if (dayOfWeek == 'Friday') {
-      neededSum += peoples * 15;
-    } else if (dayOfWeek == 'Saturday') {
-      neededSum += peoples * 20;
-    } else if (dayOfWeek == 'Sunday') {
-      neededSum += peoples * 22.5;
-    }
-    if (peoples >= 10 && peoples <= 20) {
-      neededSum -= neededSum * 0.05;
-    }
-  }
-  console.log(`Total price: ${neededSum.toFixed(2)}`);
+
+    console.log(`Total price: ${totalPrice.toFixed(2)}`);
 }
 
-vacantion(40, 'Regular', 'Saturday');
+vacation(30, "Students", "Sunday"); //Total price: 266.73
