@@ -1,5 +1,5 @@
-function multiplyNumberByTwo(num) {
-    console.log(num * 2);
+function mulltiplyByTwo(number) {
+    return number * 2;
 }
 
-multiplyNumberByTwo(20); //40
+console.log(mulltiplyByTwo(2));
