@@ -1,3 +1,4 @@
+
 function countStringOccurrences(sentence, sub) {
   let words = sentence.split(' ');
   let counter = 0;
