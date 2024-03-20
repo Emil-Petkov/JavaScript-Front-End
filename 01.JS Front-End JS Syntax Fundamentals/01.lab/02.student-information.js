@@ -1,5 +1,5 @@
-function studentInformation(name, age,grade){
-    console.log(`Name: ${name}, Age: ${age}, Grade: ${grade.toFixed(2)}`);    
+function studentInfo(name, age, grade) {
+    return `Name: ${name}, Age: ${age}, Grade: ${grade.toFixed(2)}`;
 }
 
-studentInformation('Emil', 31, 6)
+console.log(studentInfo('John', 19, 3.54678));
