@@ -1,12 +1,7 @@
-function numbersFromMToN(m, n){
-    for(let start = m; start >= n; start--){
-        console.log(start);
+function solve(end, start) {
+    for (let i = end; i >= start; i--) {
+        console.log(i);
     }
 }
 
-numbersFromMToN(4, 1);
-
-//4
-//3
-//2
-//1
+solve(6, 2);
