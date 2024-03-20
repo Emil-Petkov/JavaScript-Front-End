@@ -1,13 +1,11 @@
-function circleArea(radius) {
-    if (typeof radius != 'number') {
-        console.log(`We can not calculate the circle area, because we receive a ${typeof (radius)}.`);
+function solve(radius) {
+    if ('number' === typeof radius)  {
+        let areaOfCircle = Math.PI * radius * radius
 
-    } else {
-        let r = Math.PI * radius * radius
-
-        console.log(r.toFixed(2));
+        return areaOfCircle.toFixed(2);
+    } else{
+        return `We can not calculate the circle area, because we receive a ${typeof radius}.`
     }
 }
 
-circleArea(5); //78.54
-circleArea('name'); //We can not calculate the circle area, because we receive a string.
+console.log(solve(5));
