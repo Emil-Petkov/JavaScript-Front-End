@@ -1,7 +1,7 @@
-function largestNumber(firstNumber, secondNumber, thirdNumber) {
-    let maxNumber = Math.max(firstNumber, secondNumber, thirdNumber);
+function solve(numOne, numTwo, numThree) {
+    let maxNumber = Math.max(numOne, numTwo, numThree);
 
-    console.log(`The largest number is ${maxNumber}.`);
+    return `The largest number is ${maxNumber}.`
 }
 
-largestNumber(5, -3, 16) //The largest number is 16.
+console.log(solve(1, 2, 3));
