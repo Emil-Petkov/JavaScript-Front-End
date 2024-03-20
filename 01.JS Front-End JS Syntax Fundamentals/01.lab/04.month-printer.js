@@ -1,57 +1,32 @@
-function monthPrinter(month) {
-    switch (month) {
+function currentMonth(number){
+    switch(number){
         case 1:
-            console.log('January');
-            break;
-
+            return 'January';
         case 2:
-            console.log('February');
-            break;
-
+            return 'February';
         case 3:
-            console.log('March');
-            break;
-
+            return 'March';
         case 4:
-            console.log('April');
-            break;
-
+            return 'April';
         case 5:
-            console.log('May');
-            break;
-
+            return 'May';
         case 6:
-            console.log('June');
-            break;
-
+            return 'June';
         case 7:
-            console.log('July');
-            break;
-
+            return 'July';
         case 8:
-            console.log('August');
-            break;
-
+            return 'August';
         case 9:
-            console.log('September');
-            break;
-
+            return 'September';
         case 10:
-            console.log('October');
-            break;
-
+            return 'October';
         case 11:
-            console.log('November');
-            break;
-
+            return 'November';
         case 12:
-            console.log('December');
-            break;
-
+            return 'December';
         default:
-            console.log('Error!');
+            return 'Error!'
     }
 }
 
-
-monthPrinter(111); //Error!
+console.log(currentMonth(3));
