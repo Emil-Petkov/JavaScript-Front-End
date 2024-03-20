@@ -1,30 +1,18 @@
-function mathOperations(firstNumber, secondNumber, operator) {
-    switch (operator) {
+function solve(numOne, numTwo, operator){
+    switch(operator){
         case '+':
-            console.log(firstNumber + secondNumber);
-            break;
-
+            return numOne + numTwo;
         case '-':
-            console.log(firstNumber - secondNumber);
-            break;
-
+            return numOne - numTwo;
         case '*':
-            console.log(firstNumber * secondNumber);
-            break;
-
+            return numOne * numTwo;
         case '/':
-            console.log(firstNumber / secondNumber);
-            break;
-
+            return numOne / numTwo;
         case '%':
-            console.log(firstNumber % secondNumber);
-            break;
-
+            return numOne % numTwo;
         case '**':
-            console.log(firstNumber ** secondNumber);
-            break;
-
+            return Math.pow(numOne, numTwo);
     }
 }
 
-mathOperations(5, 6, '+') //11
+console.log(solve(3, 5.5, '*'));
