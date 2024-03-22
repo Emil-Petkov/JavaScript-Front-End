@@ -1,19 +1,19 @@
-function checkAges(age) {
-    if (age < 0) {
-        console.log('out of bounds');
-    } else {
-        if (age <= 2) {
-            console.log('baby');
+function currentAge(age) {
+    if (age >= 0) {
+        if (age < 2) {
+            return 'baby';
         } else if (age <= 13) {
-            console.log('child');
+            return 'child';;
         } else if (age <= 19) {
-            console.log('teenager');
+            return 'teenager';
         } else if (age <= 65) {
-            console.log('adult');
-        } else {
-            console.log('elder');
+            return 'adult';
+        } else if (age >= 66) {
+            return 'elder';
         }
+    } else {
+        return 'out of bounds';
     }
 }
 
-checkAges(-1); //out of bounds
+console.log(currentAge(20));
