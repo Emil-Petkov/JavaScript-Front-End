@@ -1,4 +1,5 @@
 
+
 function solve(peoples, type, day) {
 
     let total = 0;
