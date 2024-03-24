@@ -1,7 +1,13 @@
-function reversedChars(firstChar, secondChar, thirdChar) {
-    let text = firstChar + secondChar + thirdChar;
+function reversedCharacters(...symbols) {
+    let array = [];
 
-    console.log(text.split('').reverse().join(' '));
+    for (const symbol of symbols) {
+        array.push(symbol);
+    }
+
+    array.reverse();
+
+    return array.join(' ');
 }
 
-reversedChars('a', 'b', 'c'); // c b a
+console.log(reversedCharacters('a', 'b', 'c'));
