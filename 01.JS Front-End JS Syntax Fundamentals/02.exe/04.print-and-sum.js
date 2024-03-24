@@ -1,23 +1,27 @@
-function printAndSum(firstNumber, secondNumber) {
-    let sum = 0
-    let numbersAsString = ''
+function solve(start, end) {
+    let numbers = []
+    let sum = 0;
 
-    let start = firstNumber
-    let end = secondNumber
-
-    for (let num = start; num <= end; num++) {
-        numbersAsString += num.toString();
-        sum += num;
-
-        if(num < secondNumber){
-            numbersAsString += ' ';
-        }
+    for (let s = start; s <= end; s++) {
+        numbers.push(s);
+        sum += s;
     }
 
-    console.log(numbersAsString);
+    //     return {
+    //         number: numbers.join(' '),
+    //         totalSum: `Sum: ${sum}`
+    //     };
+    // }
+
+    // const result = solve(50, 60);
+
+    // console.log(result.number);
+    // console.log(result.totalSum);
+    
+    console.log(numbers.join(' '));
     console.log(`Sum: ${sum}`);
+
 }
 
-printAndSum(5, 10); //45
-printAndSum(0, 26); //351
-printAndSum(50, 60); //605
+solve(5, 10);
+
