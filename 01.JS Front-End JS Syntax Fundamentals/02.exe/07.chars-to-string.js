@@ -1,6 +1,5 @@
-function charsToString(firstChar, secondChar, thirdChar) {
-    let string = firstChar + secondChar + thirdChar;
-    console.log(string);
-}
+function solve(firstSymbol, secondSymbol, thirdSymbol) {
+    return `${firstSymbol}${secondSymbol}${thirdSymbol}`
+};
 
-charsToString('1', '7', 'e'); //17е
+console.log(solve('a', 'b', 'c'));
