@@ -33,4 +33,3 @@ function countStringOccurrences(sentence, sub) {
   console.log(
     countStringOccurrences('This is a word and it also is a sentence', 'is')
   );
-  
