@@ -1,4 +1,20 @@
 function solve(numbers) {
+    let checkList = numbers.map(number => {
+        let numberToString = number.toString();
+        let isPalindrome = numberToString === numberToString.split('').reverse().join('');
+        return isPalindrome;
+    });
+
+    return checkList.join('\n');
+}
+
+console.log(solve([123, 323, 421, 121]));
+
+
+
+//////////////////////////////////////////////////////////
+
+function solve(numbers) {
     let isPalindrome = false;
     let checkList = [];
 
