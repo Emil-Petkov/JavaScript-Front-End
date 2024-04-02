@@ -1,7 +1,8 @@
 function solve(char, nSteps) {
     let result = [];
+    let arrayLength = char.length;
 
-    for (let i = 0; i < char.length; i += nSteps) {
+    for (let i = 0; i < arrayLength; i += nSteps) {
 
         result.push(char[i]);
     }
