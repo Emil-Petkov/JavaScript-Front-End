@@ -17,6 +17,7 @@
 
 
 
+
 function solve(n) {
     let result = [];
 
