@@ -1,23 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function solve(firstName, lastName, age) {
     let info = {
         firstName,
