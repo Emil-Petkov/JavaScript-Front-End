@@ -1,9 +1,9 @@
 function solve(firstName, lastName, age) {
-    let info = {
-        firstName,
-        lastName,
-        age,
-    };
+    let info = {};
+
+    info.firstName = firstName;
+    info.lastName = lastName;
+    info.age = age;
 
     return info;
 }
