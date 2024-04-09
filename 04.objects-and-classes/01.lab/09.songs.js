@@ -1,3 +1,4 @@
+
 function solve(array) {
     class Songs {
         constructor(type, name, time) {
